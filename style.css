@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: #fbe1ff;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+p{
+    padding: 2px 0px;
+}
+i{
+    color: black;
+}
+/* .link{
+    text-decoration: none;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 10s ease-in-out 20s;
+   -webkit-transition: text-decoration 5s ease-out;
+}
+.link:hover{
+    text-decoration: underline;
+} */
+
+.main{
+    display: flex;
+}
+#left{
+    height: 88.8vh;
+    /* max-height: 88.8vh; */
+    width: 25vw;
+    padding-left: 30px;
+    background: #7F00FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}
+#left > h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+#left > h3 {
+    font-size: 15px;
+    font-weight: 200;
+}
+#right{
+    position: relative;
+    margin-left: 0;
+    height: 88.8vh;
+    width: 75vw;
+    background-image: url(./background2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+.blue-div{
+    position: absolute;
+    top: 0; 
+    /* opacity: 0.14; */
+    z-index: 1;
+    height: 88.7vh;
+    width: 75vw;
+    /* margin-left: 384px; */
+    background-color: rgba(111, 31, 216, 0.475);
+    background: -webkit-linear-gradient(to bottom, #e100ff4f, #8000ff4d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #e100ff42, #8000ff4e);
+}
+
+nav{
+    display: flex;
+    background-color: transparent;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+.placeholder{
+    background-color: #dd00ff9d;
+    width: 270px;
+    height: 20px;
+    border-radius: 50px;
+    padding-top: 1px;
+    padding-left: 10px;
+}
+.placeholder>i{
+    color: white;
+    padding-right: 5px;
+}
+.placeholder>input{
+    background-color: transparent;
+    color: #f7c9fe;
+}
+.link {
+    text-decoration: none;
+    font-weight: 300;
+    cursor: pointer;
+    position: relative;
+    color: #efc2f6;
+    transition: all 0.2s ease-out;
+  }
+  .link:hover{
+    color: white;;
+  }
+  
+  .link:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    color: white;
+    transition: all 0.2s ease-out;
+  }
+  
+  .link:hover:before {
+    width: 100%;
+  }
+
+  .btn{
+    height: 2rem;
+    width: 5rem;
+    margin: 1rem 2rem 0 0.5rem;
+    background: linear-gradient(to bottom, #e100ff, #8000ff);
+    border-radius: 20px;
+  }
+.song-name{
+    font-size: 15px;
+    font-weight: 200;
+}
+p{
+    font-size: 10px;
+    font-weight: 100;
+}
+#trending{
+    width: 100%;
+    height: 31.55%;
+    max-height: 31.55%;
+    padding: 20px 20px 20px 30px;
+    /* background-color: crimson; */
+}
+#trending>div>p{
+    word-spacing: 2px;
+    line-height: 0.8rem;
+}
+#popular-album{
+    width: 100%;
+    height: 31.55%;
+    padding: 10px 30px;
+    /* background-color: burlywood; */
+}
+#popular-artist{
+    width: 100%;
+    height: 31.55%;
+    padding: 10px 30px;
+    /* background-color: green; */
+}
+#progress{
+    display: flex;
+    background-color: rgb(47, 0, 47);
+    height: 11.2%;
+    width: 100%;
+    justify-content: space-between;
+}
+.song-list{
+    height: 72.4%;
+    margin: 20px 0px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: visible;
+
+    scrollbar-width: thin;
+    scrollbar-color: rgba(206, 31, 206, 0) transparent;
+}
+.song{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+.song > img{
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.choosing h3 i{
+    font-size: 1rem;
+}
+.choosing h3{
+    margin-top: 8px;
+}
+h2{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.albums{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.albums > img{
+    height: 95px;
+    width: 95px;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 40px;
+    margin-bottom: 10px;
+}
+.artist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.artist> img{
+    height: 95px;
+    width: 95px;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 0 40px;
+    margin-bottom: 10px;
+}
+.popular{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popular-art{
+    display: flex;
+    flex-wrap: wrap;
+}
+.first{
+    margin-left: 0 !important;
+}
+input{
+    border: none;
+    outline: none;
+    
+}
+.user-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-img> img{
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.wel{
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+.name{
+    font-size: 8px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+#trending>div>h2{
+    font-size: 40px;
+}
+#trending>div>p{
+    font-size: 15px;
+}
+#trending>div{
+max-width: 50%;
+max-height: 100%;
+}
+.current-play-music{
+    max-width: 250px;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.giphy>iframe{
+    margin-right: 20px;
+    height: 50px;
+    width: 50px;
+}
+.play-pause-progressBar-volume{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70rem;
+}
+.play-pause{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progressBar>input{
+    height: 2px;
+    width: 48rem;
+}
+#volumeRange{
+    height: 2px;
+    width: 10rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+h3 i{
+    color: white;
+    font-size: 1.8rem;
+}
+#volume i{
+    font-size: 1rem;
+}
+.Artist-name{
+    font-size: 12px;
+}

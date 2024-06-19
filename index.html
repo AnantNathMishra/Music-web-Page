@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div id="left">
+            <h2 class="playlist-name">My PlayList</h2>
+            <div class="choosing">
+                <h3 id="my-playlist"><i class="ri-music-2-fill"></i>  My Playlist</h3>
+                <h3><i class="ri-circle-line"></i>  Last Played</h3>
+                <h3><i class="ri-circle-line"></i>  Recomended</h3>
+            </div>
+            <div class="song-list">
+
+            </div>
+        </div>
+        <div id="right">
+            <div class="blue-div">
+            <div id="wrap-up">
+            <nav>
+                <div class="links">
+                    <a class="link" href="#">Discover</a>
+                    <a class="link" href="#">My Library</a>
+                    <a class="link" href="#">Radio</a>
+                </div>
+                <div class="placeholder">
+                    <i class="ri-search-line"></i>
+                    <input type="text" placeholder="Search Artist, Albums">
+                </div>
+                
+                <div class="user-img">
+                    <img src="./guru-randhawa.jpg" alt="">
+                    <div>
+                        <p class="wel">Welcome</p>
+                        <p class="name">Anant Nath Mishra</p>
+                    </div>
+                </div>
+            </nav>
+            <div id="trending">
+                <div>
+                    <h2>Blue Eyes</h2>
+                    <p>Blue eyes hypnotize teri kardi ai mennu
+                        I swear! chhoti dress mein bomb lagdi mennu
+                        Glossy lips, uff yeh tricks
+                        Baby lagdi ai killer
+                        Oh yeah oh yeah
+                        Katal kare tera bomb figure
+                        Blue eyes, hypnotize teri kardi ai mennu
+                        I swear! chhoti dress mein bomb lagdi mennu
+                        (bomb lagdi mennu, bomb lagdi mennu)
+                        (mennu.)</p>
+                    <button id="play-btn" class="btn">Play</button>
+                    <button class="btn">Follow</button>
+                </div>
+            </div>
+            <div id="popular-album">
+                <h2>Popular Albums</h2>
+                <div class="popular">
+                    
+                    <div class="albums">
+                        <img class="first" src="./honey-singh.jpg">
+                        <p class="song-name">Blue Eyes</p>
+                        <p class="Artist-name">Honey Singh</p>
+                    </div>
+                    <div class="albums">
+                        <img src="./honey-singh.jpg">
+                        <p class="song-name">Blue Eyes</p>
+                        <p class="Artist-name">Honey Singh</p>
+                    </div>
+                    <div class="albums">
+                        <img src="./honey-singh.jpg">
+                        <p class="song-name">Blue Eyes</p>
+                        <p class="Artist-name">Honey Singh</p>
+                    </div>
+                    <div class="albums">
+                        <img src="./honey-singh.jpg">
+                        <p class="song-name">Blue Eyes</p>
+                        <p class="Artist-name">Honey Singh</p>
+                    </div>
+                    <div class="albums">
+                        <img src="./honey-singh.jpg">
+                        <p class="song-name">Blue Eyes</p>
+                        <p class="Artist-name">Honey Singh</p>
+                    </div>
+                    <div class="albums">
+                        <img src="./honey-singh.jpg">
+                        <p class="song-name">Blue Eyes</p>
+                        <p class="Artist-name">Honey Singh</p>
+                    </div>
+                </div>
+            </div>
+            <div id="popular-artist">
+                <h2>Popular Artist</h2>
+                <div class="popular-art">
+                    <img src="./Honey Singh/Songs/" alt="">
+                    
+                </div>
+                
+                
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="progress">
+        <div class="current-play-music">
+            <div class="playing-music">
+                <div class="giphy">
+                    <iframe src="https://giphy.com/embed/1fkD7WKKpubBTnqAm8" width="480" height="330" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                </div>
+            </div>
+            <div class="song">
+                <img src="./honey-singh.jpg">
+                <div class="song-info">
+                    <p class="song-name">Blue Eyes</p>
+                    <p class="artist-name">Yo-Yo Honey Sing</p>
+                </div>
+            </div>
+        </div>
+        <div class="play-pause-progressBar-volume">
+            <div class="play-pause">
+                <h3 id="backward"><i class="ri-skip-back-mini-fill"></i></h3>
+                <h3 id="play"><i class="ri-play-fill"></i></h3>
+                <h3 id="forward"><i class="ri-skip-forward-mini-fill"></i></h3>
+            </div>
+            <div class="progressBar">
+                <input type="range" name="progressbar" id="ProgressBaar">
+            </div>
+            <div class="volume">
+                <h3 id="volume"><i class="ri-volume-up-fill"></i></h3>
+                <input type="range" name="volumeRange" id="volumeRange">
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
